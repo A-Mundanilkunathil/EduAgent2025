@@ -121,19 +121,37 @@ class SimpleVideoComposer:
                 output_path = output_dir / f"edu_video_{datetime.now().strftime('%Y%m%d_%H%M%S')}.mp4"
                 
                 print(f"🎬 Exporting video to: {output_path}")
-                final_video.write_videofile(
-                    str(output_path),
-                    fps=self.fps,
-                    codec='libx264',
-                    audio_codec='aac',
-                    temp_audiofile='temp-audio.m4a',
-                    remove_temp=True
-                )
-                
-                # Clean up
-                final_video.close()
-                if audio_clip:
-                    audio_clip.close()
+                try:
+                    final_video.write_videofile(
+                        str(output_path),
+                        fps=self.fps,
+                        codec='libx264',
+                        audio_codec='aac',
+                        temp_audiofile='temp-audio.m4a',
+                        remove_temp=True,
+                        verbose=False,  # Reduce output noise
+                        logger=None,    # Disable moviepy logging
+                        preset='fast',  # Faster encoding (lower quality but quicker)
+                        bitrate='1000k' # Lower bitrate for faster processing
+                    )
+                    
+                    # Validate the generated video
+                    if not self._validate_video(output_path):
+                        raise Exception("Generated video file is corrupted or incomplete")
+                    
+                    print(f"✅ Video successfully created: {output_path}")
+                    
+                except Exception as e:
+                    print(f"❌ Video export failed: {e}")
+                    # Clean up corrupted file
+                    if output_path.exists():
+                        output_path.unlink()
+                    raise e
+                finally:
+                    # Clean up MoviePy objects
+                    final_video.close()
+                    if audio_clip:
+                        audio_clip.close()
                 
                 return {
                     "video_path": str(output_path),
@@ -148,6 +166,57 @@ class SimpleVideoComposer:
         except Exception as e:
             print(f"Video composition error: {e}")
             return self._simulate_video_creation(lesson_plan, animations, narration)
+    
+    def _validate_video(self, video_path):
+        """Validate that the generated video file is not corrupted"""
+        try:
+            import subprocess
+            import json
+            
+            # Use ffprobe to check if video is valid
+            result = subprocess.run([
+                'ffprobe', '-v', 'quiet', '-print_format', 'json',
+                '-show_streams', str(video_path)
+            ], capture_output=True, text=True, timeout=10)
+            
+            if result.returncode != 0:
+                print(f"⚠️  Video validation failed: ffprobe returned {result.returncode}")
+                return False
+            
+            # Parse the JSON output
+            try:
+                probe_data = json.loads(result.stdout)
+                streams = probe_data.get('streams', [])
+                
+                # Check if we have at least one video stream
+                video_streams = [s for s in streams if s.get('codec_type') == 'video']
+                if not video_streams:
+                    print("⚠️  Video validation failed: No video streams found")
+                    return False
+                
+                # Check if video has reasonable duration
+                video_stream = video_streams[0]
+                duration = float(video_stream.get('duration', 0))
+                if duration < 1.0:  # Video should be at least 1 second
+                    print(f"⚠️  Video validation failed: Duration too short ({duration}s)")
+                    return False
+                
+                print(f"✅ Video validation passed: {duration:.1f}s duration")
+                return True
+                
+            except json.JSONDecodeError:
+                print("⚠️  Video validation failed: Invalid ffprobe output")
+                return False
+                
+        except subprocess.TimeoutExpired:
+            print("⚠️  Video validation failed: ffprobe timeout")
+            return False
+        except FileNotFoundError:
+            print("⚠️  Video validation skipped: ffprobe not available")
+            return True  # Skip validation if ffprobe not available
+        except Exception as e:
+            print(f"⚠️  Video validation failed: {e}")
+            return False
     
     def _simulate_video_creation(self, lesson_plan, animations, narration):
         """Fallback simulation"""

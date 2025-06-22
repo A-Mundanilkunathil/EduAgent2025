@@ -355,7 +355,7 @@ class EduAgentInterface:
                         file_input, voice_choice, subject_choice, grade_choice,
                         duration_minutes, include_captions, include_transcript, slow_narration
                     ),
-                    timeout=120.0  # Longer timeout for full video generation
+                    timeout=300.0  # 5 minutes timeout for full video generation
                 )
                 result = asyncio.run(result)
             except asyncio.TimeoutError:
