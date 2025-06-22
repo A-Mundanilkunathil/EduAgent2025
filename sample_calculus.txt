@@ -1,0 +1,36 @@
+# Introduction to Derivatives in Calculus
+
+## What is a Derivative?
+
+A derivative represents the instantaneous rate of change of a function with respect to its variable. In simpler terms, it tells us how quickly a function is changing at any given point.
+
+### Mathematical Definition
+
+The derivative of a function f(x) is defined as:
+
+f'(x) = lim[h→0] (f(x+h) - f(x))/h
+
+This limit represents the slope of the tangent line to the curve at point x.
+
+### Example: Power Rule
+
+For a simple function like f(x) = x²:
+- The derivative is f'(x) = 2x
+- This means at any point x, the slope of the curve is 2x
+- At x = 3, the slope is 6
+- At x = 0, the slope is 0 (horizontal tangent)
+
+### Real-World Applications
+
+1. **Velocity**: If position is s(t), then velocity is s'(t)
+2. **Acceleration**: If velocity is v(t), then acceleration is v'(t)
+3. **Optimization**: Finding maximum and minimum values
+4. **Economics**: Marginal cost and revenue analysis
+
+### Practice Problems
+
+1. Find the derivative of f(x) = 3x³ + 2x² - 5x + 1
+2. What is the slope of y = x² at the point (2, 4)?
+3. If the position of an object is s(t) = 16t², find its velocity at t = 3 seconds.
+
+This foundational concept opens the door to understanding rates of change in all areas of science and mathematics.

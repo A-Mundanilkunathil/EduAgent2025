@@ -1,0 +1,50 @@
+🎓 Educational Content Summary
+==================================================
+
+📄 Source: sample_calculus.pdf
+⏱️ Target Duration: 1.5 minutes
+📅 Generated: 2025-06-22 09:43:37
+
+📝 Content:
+--------------------
+# Introduction to Derivatives
+Understanding the Basic Building Block of Calculus
+
+## Key Learning Objectives
+- Define what a derivative represents in mathematical terms
+- Understand the practical meaning of a derivative as rate of change
+- Connect derivatives to real-world applications
+- Apply the concept through a simple power rule example
+
+## Content Breakdown
+[0:00-0:15] Definition
+"A derivative measures how quickly a function changes at any point - imagine tracking the steepness of a roller coaster track at each moment."
+
+[0:15-0:35] Mathematical Meaning
+"When we find a derivative, we're calculating the slope of the tangent line at any point on a curve. Think of it as zooming in until a curved line looks straight."
+
+[0:35-1:00] Simple Example
+"Let's look at f(x) = x². Its derivative is 2x, meaning:
+- At x=3, slope is 6
+- At x=0, slope is 0 (flat)
+This tells us exactly how steep our curve is at any point."
+
+[1:00-1:30] Real Applications
+"Derivatives are everywhere:
+- Speed is the derivative of position
+- Acceleration is the derivative of speed
+- Business uses derivatives to optimize profits"
+
+## Visual Elements Needed
+- Animated curve with moving tangent line
+- Side-by-side comparison of function and its derivative
+- Real-world example animation (car accelerating)
+- Simple parabola highlighting different slopes
+
+## Key Takeaways
+- Derivatives measure instantaneous rate of change
+- They represent the slope at any point on a curve
+- The power rule (x² → 2x) is the simplest derivative rule
+- Derivatives connect math to real-world motion and change
+
+💡 This content is ready for video creation!

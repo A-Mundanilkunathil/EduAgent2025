@@ -1,0 +1,42 @@
+📝 Educational Content Transcript
+========================================
+
+🎙️ Narrator: Math Teacher
+📚 Subject: Mathematics
+🎓 Level: High School
+⏱️ Duration: 0.5 minutes
+
+Educational summary (AI generation error: Connection error.)
+
+Extracted content:
+Introduction to Derivatives in Calculus
+1
+What is a Derivative?
+A derivative represents the instantaneous rate of change of a function with respect to its variable. In simpler
+terms, it tells us how quickly a function is changing at any given point.
+1.1
+Mathematical Definition
+The derivative of a function f(x) is defined as:
+f ′(x) = lim
+h→0
+f(x + h) −f(x)
+h
+(1)
+This limit represents the slope of the tangent line to the curve at point x.
+1.2
+Example: Power Rule
+For a simple function like f(x) = x2:
+• The derivative is f ′(x) = 2x
+• This means at any point x, the slope of the curve is 2x
+• At x = 3, the slope is 6
+• At x = 0, the slope is 0 (horizontal tangent)
+1.3
+Real-World Applications
+1. Velocity: If position is s(t), then velocity is s′(t)
+2. Acceleration: If velocity is v(t), then acceleration is v′(t)
+3. Optimization: Finding maximum and minimum values
+4. Economics: Marginal cost and revenue analysis
+1.4
+Practice Problems
+1. Find the derivative of f(x) = 3x3 + 2x2 −5x + 1
+2. What...

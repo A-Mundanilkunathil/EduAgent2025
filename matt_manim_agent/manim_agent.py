@@ -52,6 +52,15 @@ STYLE GUIDELINES:
 - Include helpful annotations and labels
 - Follow 3Blue1Brown aesthetic principles
 
+VISUAL QUALITY REQUIREMENTS:
+- NEVER overlap text with axes, gridlines, or other objects
+- Use .shift() and .move_to() to position elements with adequate spacing
+- Place labels OUTSIDE the main visual area or in clear empty spaces
+- Keep axes numbers/labels separated from mathematical objects
+- Use VGroup to manage spacing between related elements
+- Test positioning: text should be clearly readable without obstruction
+- Default spacing: at least 0.5 units between text and other objects
+
 CONTEXT INTEGRATION:
 - Adapt pacing based on duration requirements
 - Sync key moments with script narration

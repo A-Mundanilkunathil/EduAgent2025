@@ -1,0 +1,14 @@
+
+# Simple Math Demo
+
+## Basic Algebra
+
+Solving for x in the equation: 2x + 5 = 15
+
+Step 1: Subtract 5 from both sides
+2x = 10
+
+Step 2: Divide by 2
+x = 5
+
+Therefore, x = 5

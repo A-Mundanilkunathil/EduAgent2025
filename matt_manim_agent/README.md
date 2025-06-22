@@ -1,6 +1,15 @@
 # Manim Animation Agent for CrewAI
 
-A sophisticated CrewAI agent that creates educational math animations using Manim and Claude API. Built for the UC Berkeley AI Hackathon 2025.
+A sophisticated two-agent system for creating and validating educational math animations using Manim and Claude API. Built for the UC Berkeley AI Hackathon 2025.
+
+## 🏗️ Two-Agent Architecture
+
+This project implements a **separation of concerns** approach with two specialized agents:
+
+1. **Manim Generation Agent** - Fast animation creation (3-10 seconds)
+2. **Quality Check Agent** - Optional quality validation (1-3 seconds)
+
+This architecture provides flexibility: generate quickly for demos, or add quality checks for production content.
 
 ## Features
 
@@ -45,6 +54,41 @@ pip install manim
 
 # Windows
 # Follow instructions at https://docs.manim.community/en/stable/installation/windows.html
+```
+
+## Two-Agent System
+
+### Why Two Agents?
+
+**Problem**: Quality checking slows down generation, but skipping it risks poor output.
+
+**Solution**: Separate agents that can work independently or together.
+
+### Agent 1: Manim Generator
+- **Focus**: Speed and flexibility
+- **Time**: 3-10 seconds per animation
+- **Output**: MP4 video + metadata
+
+### Agent 2: Quality Checker
+- **Focus**: Validation and improvement
+- **Time**: 1-3 seconds per check
+- **Output**: Quality report with score and recommendations
+
+### Usage Patterns
+
+```python
+# Pattern 1: Fast generation only (demos, prototypes)
+result = await create_animation("sine wave")
+
+# Pattern 2: Generation + quality check (production)
+result = await create_animation("complex proof")
+if result.success:
+    report = await check_animation_quality(result.video_path)
+    
+# Pattern 3: Conditional quality (smart workflow)
+if is_complex(concept):
+    # Check quality for complex animations
+    report = await check_animation_quality(video_path)
 ```
 
 ## Quick Start
@@ -169,10 +213,35 @@ The agent accepts context from other agents in the system:
 
 ## Examples
 
-Run the example scenarios:
-
+### Basic Examples
 ```bash
+# Original examples (single agent)
 python example_usage.py
+
+# Multi-agent examples
+python multi_agent_example.py
+```
+
+### Two-Agent Workflow Example
+
+```python
+from manim_agent import create_animation
+from quality_check_agent import check_animation_quality
+
+# Step 1: Fast generation
+animation = await create_animation("Fourier series visualization")
+
+# Step 2: Optional quality check
+if animation.success:
+    quality = await check_animation_quality(animation.video_path)
+    print(f"Quality score: {quality.score}/100")
+    
+    if quality.score < 70:
+        # Regenerate with improvements
+        animation = await create_animation(
+            "Fourier series visualization",
+            style_direction={"spacing": "generous"}
+        )
 ```
 
 This demonstrates:

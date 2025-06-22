@@ -1,0 +1,39 @@
+
+    # Understanding Derivatives - A 90 Second Journey
+    
+    ## What is a Derivative?
+    
+    A derivative tells us how fast something is changing. Think of it as the slope of a curve at any point.
+    
+    ## The Mathematical Definition
+    
+    For a function f(x), the derivative f'(x) is:
+    f'(x) = lim[h→0] (f(x+h) - f(x))/h
+    
+    ## Simple Example: The Power Rule
+    
+    If f(x) = x², then f'(x) = 2x
+    
+    This means:
+    - At x = 1, the slope is 2
+    - At x = 2, the slope is 4
+    - At x = 3, the slope is 6
+    
+    ## Real-World Applications
+    
+    1. **Velocity**: How fast you're moving (derivative of position)
+    2. **Acceleration**: How quickly your speed changes (derivative of velocity)
+    3. **Economics**: Marginal cost and revenue
+    4. **Physics**: Rate of change in any physical quantity
+    
+    ## Visual Understanding
+    
+    Imagine a hill. The derivative tells you how steep the hill is at each step.
+    - Positive derivative = uphill
+    - Negative derivative = downhill
+    - Zero derivative = flat ground (local max/min)
+    
+    ## Key Takeaway
+    
+    Derivatives are everywhere! They help us understand change in our world.
+    

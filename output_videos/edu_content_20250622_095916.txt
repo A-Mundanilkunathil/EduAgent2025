@@ -1,0 +1,37 @@
+🎓 Educational Content Summary
+==================================================
+
+📄 Source: sample_calculus.pdf
+⏱️ Target Duration: 1.0 minutes
+📅 Generated: 2025-06-22 09:59:16
+
+📝 Content:
+--------------------
+# Introduction to Derivatives in Calculus
+
+## Key Learning Objectives
+- Understand what a derivative represents
+- Recognize the basic derivative formula
+- Connect derivatives to real-world applications
+- Visualize slope at different points on a curve
+
+## Content Breakdown
+"Today we're exploring derivatives - a fundamental concept in calculus that measures how quickly things change. Imagine watching a car's speedometer: the derivative tells us the instantaneous speed at any moment, just like how the speedometer shows our current speed while driving.
+
+The derivative is the slope of a curve at any point. For example, with f(x) = x², the derivative is 2x, meaning the slope changes as we move along the curve. At x = 0, the slope is flat, but at x = 3, the slope is 6.
+
+We use derivatives to calculate velocity from position, acceleration from velocity, and even to optimize real-world scenarios in economics and engineering."
+
+## Visual Elements Needed
+- Animated curve of f(x) = x² with moving tangent line
+- Speedometer animation transitioning to position-velocity graph
+- Multiple tangent lines showing different slopes at various points
+- Simple equation transformation showing power rule
+
+## Key Takeaways
+- A derivative measures instantaneous rate of change
+- The derivative equals the slope of the tangent line
+- Real-world applications include velocity, acceleration, and optimization
+- For x², the derivative 2x tells us the slope at any point
+
+💡 This content is ready for video creation!

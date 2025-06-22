@@ -1,0 +1,37 @@
+🎓 Educational Content Summary
+==================================================
+
+📄 Source: sample_calculus.pdf
+⏱️ Target Duration: 1 minutes
+📅 Generated: 2025-06-22 10:01:23
+
+📝 Content:
+--------------------
+# Introduction to Derivatives in Calculus
+
+## Key Learning Objectives
+- Understand what a derivative represents
+- Grasp the basic concept of instantaneous rate of change
+- Recognize real-world applications of derivatives
+- Apply the power rule in basic calculations
+
+## Content Breakdown
+[0-20s] Start with the core definition: A derivative measures how quickly a function changes at any point - like finding the exact speed of a car at a specific moment.
+
+[20-40s] Demonstrate with a simple example using f(x) = x². Show how the derivative f'(x) = 2x gives us the slope at any point. Visualize this with a curve and moving tangent line.
+
+[40-60s] Connect to real life: When GPS calculates your speed, it's using derivatives! Similarly, derivatives help engineers optimize designs and economists analyze markets.
+
+## Visual Elements Needed
+- Animated graph showing a parabola (f(x) = x²)
+- Moving tangent line sliding along the curve
+- Split screen showing real-world example (car speedometer) alongside mathematical representation
+- Simple animation showing slope calculations at different points
+
+## Key Takeaways
+- A derivative shows the instantaneous rate of change
+- The power rule (for x²→2x) is a fundamental example
+- Derivatives appear everywhere in real life (speed, optimization, economics)
+- Understanding derivatives unlocks practical problem-solving in many fields
+
+💡 This content is ready for video creation!

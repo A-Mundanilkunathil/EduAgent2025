@@ -1,0 +1,17 @@
+# Quick Calculus: What is a Derivative?
+
+## Core Concept
+A derivative measures how fast a function changes.
+
+## Simple Example
+For f(x) = x², the derivative is f'(x) = 2x
+
+## What This Means
+- At x = 1, slope = 2
+- At x = 3, slope = 6  
+- Bigger x = steeper slope
+
+## Real Application
+Speed is the derivative of distance!
+
+Perfect for a 30-60 second educational video with animation.

@@ -1,0 +1,35 @@
+📝 Educational Content Transcript
+========================================
+
+🎙️ Narrator: Math Teacher
+📚 Subject: Mathematics
+🎓 Level: High School
+⏱️ Duration: 1.0 minutes
+
+# Introduction to Derivatives in Calculus
+
+## Key Learning Objectives
+- Understand the basic concept of a derivative
+- Recognize the derivative as a rate of change
+- Connect derivatives to real-world applications
+- Learn the power rule through a simple example
+
+## Content Breakdown
+(60-second script)
+"A derivative is a mathematical tool that shows us how quickly something is changing. Imagine watching a car's speedometer – it tells you the rate of change of position, which is actually a derivative!
+
+The most basic example is the function f(x) = x². Its derivative is 2x, meaning at any point, the rate of change equals twice the x-value. For instance, when x is 3, the rate of change is 6.
+
+This concept applies everywhere: from calculating velocity and acceleration in physics to analyzing costs in economics. It's the mathematical way of measuring instantaneous change."
+
+## Visual Elements Needed
+- Animated graph of f(x) = x² with a moving tangent line
+- Speedometer illustration transitioning to position-time graph
+- Simple animation showing slope getting steeper as x increases
+- Split screen showing real-world applications
+
+## Key Takeaways
+- A derivative measures instantaneous rate of change
+- The derivative of x² is 2x (power rule example)
+- Derivatives have practical applications in physics and economics
+- The value of a derivative represents the slope at a point

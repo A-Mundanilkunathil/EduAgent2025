@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Introduction to Derivatives in Calculus}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{What is a Derivative?}
+
+A derivative represents the instantaneous rate of change of a function with respect to its variable. In simpler terms, it tells us how quickly a function is changing at any given point.
+
+\subsection{Mathematical Definition}
+
+The derivative of a function $f(x)$ is defined as:
+
+\begin{equation}
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+\end{equation}
+
+This limit represents the slope of the tangent line to the curve at point $x$.
+
+\subsection{Example: Power Rule}
+
+For a simple function like $f(x) = x^2$:
+\begin{itemize}
+    \item The derivative is $f'(x) = 2x$
+    \item This means at any point $x$, the slope of the curve is $2x$
+    \item At $x = 3$, the slope is $6$
+    \item At $x = 0$, the slope is $0$ (horizontal tangent)
+\end{itemize}
+
+\subsection{Real-World Applications}
+
+\begin{enumerate}
+    \item \textbf{Velocity}: If position is $s(t)$, then velocity is $s'(t)$
+    \item \textbf{Acceleration}: If velocity is $v(t)$, then acceleration is $v'(t)$
+    \item \textbf{Optimization}: Finding maximum and minimum values
+    \item \textbf{Economics}: Marginal cost and revenue analysis
+\end{enumerate}
+
+\subsection{Practice Problems}
+
+\begin{enumerate}
+    \item Find the derivative of $f(x) = 3x^3 + 2x^2 - 5x + 1$
+    \item What is the slope of $y = x^2$ at the point $(2, 4)$?
+    \item If the position of an object is $s(t) = 16t^2$, find its velocity at $t = 3$ seconds.
+\end{enumerate}
+
+This foundational concept opens the door to understanding rates of change in all areas of science and mathematics.
+
+\end{document}
