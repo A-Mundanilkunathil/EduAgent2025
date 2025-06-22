@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "title": "Lesson on Fourier Series and Signal Decomposition",
+    "subject": "Advanced Mathematics",
+    "target_audience": "Engineering Students",
+    "total_duration": 25.0,
+    "generated_at": "2025-06-21T23:46:44.890817",
+    "animation_count": 0
+  },
+  "overview": {
+    "prerequisites": [],
+    "learning_objectives": [
+      "U"
+    ],
+    "key_concepts": [
+      "Fourier",
+      "Series"
+    ]
+  },
+  "sections": [
+    {
+      "index": 0,
+      "title": "Section 1",
+      "content": "LESSON PLAN: Fourier Series and Signal Decomposition\nDuration: 60 minutes\nTarget: Engineering Students\n==================================================",
+      "duration_estimate": 5.0,
+      "complexity": "intermediate",
+      "animations": [],
+      "key_points": [
+        "LESSON PLAN: Fourier Series and Signal Decomposition\nDuration: 60 minutes\nTarget: Engineering Students\n=================================================="
+      ],
+      "visualization_notes": "No specific visualizations for this section."
+    },
+    {
+      "index": 1,
+      "title": "Section 2",
+      "content": "LEARNING OBJECTIVES:\n- Understand the fundamental concept of Fourier series\n- Visualize how complex signals can be decomposed into simpler sinusoidal waves\n- Learn to identify fundamental frequencies and harmonics\n- Apply Fourier series to analyze periodic signals",
+      "duration_estimate": 5.0,
+      "complexity": "intermediate",
+      "animations": [],
+      "key_points": [
+        "LEARNING OBJECTIVES:\n- Understand the fundamental concept of Fourier series\n- Visualize how complex signals can be decomposed into simpler sinusoidal waves\n- Learn to identify fundamental frequencies and harmonics\n- Apply Fourier series to analyze periodic signals"
+      ],
+      "visualization_notes": "No specific visualizations for this section."
+    },
+    {
+      "index": 2,
+      "title": "Section 3",
+      "content": "1. INTRODUCTION (5 minutes)\n--------------------------\nBrief overview of Joseph Fourier's discovery and the importance of signal decomposition in engineering.",
+      "duration_estimate": 5.0,
+      "complexity": "intermediate",
+      "animations": [],
+      "key_points": [
+        "1",
+        "INTRODUCTION (5 minutes)\n--------------------------\nBrief overview of Joseph Fourier's discovery and the importance of signal decomposition in engineering."
+      ],
+      "visualization_notes": "No specific visualizations for this section."
+    },
+    {
+      "index": 3,
+      "title": "Section 4",
+      "content": "{visualization: Show a complex periodic wave morphing into its constituent sine waves}\nConcept to visualize: Demonstrate how a square wave can be broken down into multiple sine waves that, when added together, approximate the original signal.",
+      "duration_estimate": 5.0,
+      "complexity": "intermediate",
+      "animations": [],
+      "key_points": [
+        "{visualization: Show a complex periodic wave morphing into its constituent sine waves}\nConcept to visualize: Demonstrate how a square wave can be broken down into multiple sine waves that, when added together, approximate the original signal."
+      ],
+      "visualization_notes": "No specific visualizations for this section."
+    },
+    {
+      "index": 4,
+      "title": "Section 5",
+      "content": "2. FUNDAMENTAL CONCEPTS (15 minutes)\n----------------------------------\na) Periodic Signals\n- Definition of periodic signals\n- Time period and frequency\n- Examples of common periodic signals",
+      "duration_estimate": 5.0,
+      "complexity": "intermediate",
+      "animations": [],
+      "key_points": [
+        "2",
+        "FUNDAMENTAL CONCEPTS (15 minutes)\n----------------------------------\na) Periodic Signals\n- Definition of periodic signals\n- Time period and frequency\n- Examples of common periodic signals"
+      ],
+      "visualization_notes": "No specific visualizations for this section."
+    }
+  ],
+  "assessment": {
+    "questions": [],
+    "resources": [
+      "I"
+    ]
+  },
+  "animations": []
+}
