@@ -140,6 +140,9 @@ asyncio.run(generate_video())
 ## 👥 Team
 
 - **Matt**: Manim Animation Specialist
+- **Aaron** : Agent Specialist 
+- **Shreyas** : UI Specialist
+- **Arturo** : Researcher
 - **Art**: Educational Content & Lesson Planning
 - **Claude Code**: AI Architecture & Integration
 
